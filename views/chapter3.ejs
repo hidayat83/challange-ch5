@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="slide.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Challenge Chapter 3</title>
+</head>
+
+<body>
+  <div class="container-fluid halaman-1 p-0" id="hal1">
+    <ul class="nav nav-main">
+      <li class="nav-item nav-menu-main-logo">
+        <a class="nav-link" href="#">
+          <font color="white">LOGO</font>
+        </a>
+      </li>
+      <li class="nav-item nav-menu-main">
+        <a class="nav-link" href="#hal2">
+          <font color="white">HOME</font>
+        </a>
+      </li>
+      <li class="nav-item nav-menu-main">
+        <a class="nav-link" href="#hal3">
+          <font color="white">WORK</font>
+        </a>
+      </li>
+      <li class="nav-item nav-menu-main">
+        <a class="nav-link" href="#hal6">
+          <font color="white">CONTACT</font>
+        </a>
+      </li>
+      <li class="nav-item nav-menu-main">
+        <a class="nav-link" href="#hal1">
+          <font color="white">ABOUT ME</font>
+        </a>
+      </li>
+      <li class="nav-item nav-menu-main-signup">
+        <a class="nav-link" href="http://127.0.0.1:5500/signup.html">
+          <font color="white">SIGN UP</font>
+        </a>
+      </li>
+      <li class="nav-item nav-menu-main-login">
+        <a class="nav-link" href="login">
+          <font color="white">LOGIN</font>
+        </a>
+      </li>
+    </ul>
+    <div class="d-flex flex-row justify-content-center">
+      <div class="judul-text text-center">
+        <font color="white">
+          <h1>PLAY TRADITIONAL GAME</h1>
+        </font>
+        <br>
+        <font color="white">
+          <h3>Experience new traditional game play</h3>
+        </font>
+        <button type="button" class="btn btn-warning btn-warna col-md-3">
+          <a class="nav-link" href="http://127.0.0.1:5500/play.html">
+            <font color="black">PLAY NOW</font>
+          </a>
+        </button>
+        <font color="white">
+          <p>THE STORY</p>
+        </font>
+        <button onclick="topFunction()" id="next-slide" class="btn btn-warna2">
+          <font color="white">&#9661;</font>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      var mybutton = document.getElementById("next-slide");
+      window.onscroll = function () { scrollFunction() };
+      function scrollFunction() {
+        if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 1000;
+        document.documentElement.scrollTop = 1000;
+      }
+    </script>
+
+  </div>
+
+
+
+  <div class="container-fluid halaman-2 p-0" id="hal2">
+    <div class="row">
+      <div class="col">
+        <font color="white">
+          <p>What's so special?</p>
+        </font>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <font color="white">
+          <h1>THE GAMES</h1>
+        </font>
+      </div>
+      <div class="col-7">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="rockpaperstrategy-1600.jpg" style="width:700px">
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="rockpaperstrategy-1600.jpg" style="width:700px">
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="rockpaperstrategy-1600.jpg" style="width:700px">
+            <div class="text">Caption Three</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="container-fluid halaman-3" id="hal3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 offset-md-6">
+          <div class="row">
+            <div class="col col-atas">
+              <font color="white">
+                <p>What's so special?</p>
+              </font>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <font color="white">
+                <h1>FEATURES</h1>
+              </font>
+            </div>
+          </div>
+          <ul class="timeline timelines">
+            <li>
+              <font color="orange">
+                <h3>TRADITIONAL GAMES</h3>
+              </font>
+              <font color="white">
+                <p>If you miss your childhood, we provide many traditional games here</p>
+              </font>
+            </li>
+            <li>
+              <font color="orange">
+                <h3>GAME SUIT</h3>
+              </font>
+              <br>
+            </li>
+            <li>
+              <font color="orange">
+                <h3>TBD</h3>
+              </font>
+              <br>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid halaman-4" id="hal4">
+    <div class="row row-judul">
+      <div class="col">
+        <font color="white">
+          <h1>SYSTEM <br> REQUIREMENTS</h1>
+        </font>
+        <font color="white">
+          <p>Can My Computer Run this game? </p>
+        </font>
+      </div>
+    </div>
+    <table class="table table-bordered isi-table col-md-4 ">
+      <tbody>
+        <tr>
+          <td>
+            <font color="orange">
+              <h2>OS:</h2>
+            </font>
+            <font color="white">
+              <p>Windows 7 64-bit only <br>(no OSX support this time)</p>
+            </font>
+          </td>
+          <td>
+            <font color="orange">
+              <h2>PROCESSOR</h2>
+            </font>
+            <font color="white">
+              <p>Intel Core Duo @ 2.4 GHZ or<br>AMD Athlon X2 @ 2.8 GHZ</p>
+            </font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font color="orange">
+              <h2>MEMORY</h2>
+            </font>
+            <font color="white">
+              <p>4 GB RAM</p>
+            </font>
+          </td>
+          <td>
+            <font color="orange">
+              <h2>STORAGE</h2>
+            </font>
+            <font color="white">
+              <p>8 GB available space</p>
+            </font>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <font color="orange">
+              <h2>GRAPHICS:</h2>
+            </font>
+            <font color="white">
+              <p>NVIDIA GeForce GTX 660 2GB or <br>AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</p>
+            </font>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="container-fluid halaman-5" id="hal5">
+    <div class="row top-score">
+      <div class="col">
+        <font color="white">
+          <h1>TOP SCORES</h1>
+        </font>
+        <font color="white">
+          <p>This top score from various games provided <br> on this platform</p>
+        </font>
+      </div>
+    </div>
+    <button type="button" class="btn btn-warning col-md-2 button-seemore">See more</button>
+
+    <div class="row">
+      <div class="col">
+        <div class="col-avt-1" id=box1>
+          <img src="https://foto.wartaekonomi.co.id/files/arsip_foto_2021_02_17/bill_gates_105203_big.jpg" alt="Avatar"
+            class="avatar avatar-1">
+          <font color="orange">
+            <h2>BILL GATES</h2>
+          </font>
+          <font color="grey">
+            <h4>PC GAMER</h4>
+          </font>
+          <font color="grey">
+            <p>Awesome platform</p>
+          </font>
+        </div>
+        <div class="col-avt-2" id="box2">
+          <img src=" https://akcdn.detik.net.id/visual/2020/04/30/7b9771ee-b049-4a6c-824b-4ad5ca9c3844_169.jpeg?w=650"
+            alt="Avatar" class="avatar avatar-2">
+          <font color="orange">
+            <h2>ELON MUSK</h2>
+          </font>
+          <font color="grey">
+            <h4>MOBILE GAMER</h4>
+          </font>
+          <font color="grey">
+            <p>Nice platform</p>
+          </font>
+        </div>
+      </div>
+      <div class="col-avt-3" id="box3">
+        <img src="https://hukumbisnis.net/files/media/bac9a852d621cdd5549d88be16c3a4d0.jpg" alt="Avatar"
+          class="avatar avatar-3">
+        <font color="orange">
+          <h2>JEFF BEZOZ</h2>
+        </font>
+        <font color="grey">
+          <h4>CONSOLE GAMER</h4>
+        </font>
+        <font color="grey">
+          <p>Good platform</p>
+        </font>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+  <div class="cointainer-fluid halaman-6" id="hal6">
+    <div class="row row-title">
+      <div class="col">
+        <font color="white">
+          <h3>Want to stay in touch?</h3>
+        </font>
+        <font color="white">
+          <h1>NEWSLETTER SUBSCRIBE</h1>
+        </font>
+        <font color="white">
+          <p>In order to start receiving our news all you have to do is enter your email <br> address. Everything else
+            will no taken care of by us. We sill send you <br> emails containing information about game. We don't spam.
+          </p>
+        </font>
+        <div class="row align-items-center">
+          <div class="col-5">
+            <form class="form-floating form-email">
+              <input type="email" class="form-control " id="emailvalue" placeholder="name@example.com"
+                value="youremail@binar.co.id">
+            </form>
+          </div>
+          <div class="col"><button type="button" class="btn btn-warning btn-setting">Subscribe now</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="row Footer-text-button">
+      <div class="col">
+        <div class="col-8 ">
+          <a class="foot-link foot-main" href="#hal1">
+            <font color="white">MAIN</font>
+          </a>
+
+          <a class="foot-link foot-about" href="#hal2">
+            <font color="white">ABOUT</font>
+          </a>
+
+          <a class="foot-link foot-game" href="#hal3">
+            <font color="white">GAME FEATURES</font>
+          </a>
+
+          <a class="foot-link foot-system" href="#hal4">
+            <font color="white">SYSTEM REQUIREMENTS</font>
+          </a>
+
+          <a class="foot-link foot-quotes" href="#hal5">
+            <font color="white">QUOTES</font>
+          </a>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="garis bawah">
+      <hr>
+    </div>
+  </div>
+
+</body>
+
+</html>

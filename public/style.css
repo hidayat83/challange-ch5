@@ -1,0 +1,466 @@
+.halaman-1 {
+    background: url('main-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100%;
+
+}
+
+.halaman-1::before {
+    background-position: absolute;
+
+}
+
+.nav-menu-main-logo {
+    margin-left: 5%;
+    margin-right: 10%;
+    font-size: 2rem;
+}
+
+.nav-menu-main :hover {
+    background-color : lightblue;
+}
+
+.nav-menu-main {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.nav-menu-main-signup {
+    margin-top: 10px;
+    margin-left: 33%;
+}
+
+.nav-menu-main-signup :hover {
+    background-color : lightblue;
+}
+.nav-menu-main-login {
+    margin-top: 10px;
+}
+.nav-menu-main-login :hover {
+    background-color : lightblue;
+}
+
+.nav-main {
+    background-color: #000000;
+    opacity: 0.7;
+
+}
+
+.judul-text h1{
+    font-size: 5.2rem;
+    margin-top: 255px;
+}
+
+.judul-text h3{
+    font-size: 1.8rem;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.button-main {
+    margin-top: 100px;
+    margin-bottom: 500px;
+}
+
+.judul-text p {
+    margin-top: 280px;
+    font-size: 1rem;
+}
+
+.judul-text-arrow {
+    font-size: 2rem;
+    margin-top: -30px;
+  }
+
+.btn-warna:hover{
+    background-color: darkgoldenrod;
+}
+
+.btn-warna2 {
+    margin-left: 48%;
+}
+
+  .halaman-2 {
+    background: url('the-games-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100%;
+  }
+
+  .halaman-2 p {
+    margin-left: 6%;
+    font-size: 1.8rem;
+    margin-top: 220px;
+
+    
+  }
+
+  .halaman-2 h1 {
+    margin-left: 16%;
+    font-size: 4rem;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  max-height: 400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: auto;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: auto;
+  position: absolute;
+  top: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: auto;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.halaman-3 {
+    background: url('features.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100%;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 40px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #f5f5f5;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+
+.col-atas {
+    margin-top: 280px;
+}
+
+.halaman-4 {
+    background: url('requirements.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100%;
+    filter: brightness(50%);
+    
+}
+
+.row-judul h1 {
+    margin-left: 10%;
+    margin-top: 200px;
+    font-size: 3.5rem;
+}
+
+.row-judul p {
+    margin-left: 45%;
+    margin-top: -100px;
+}
+
+.isi-table {
+    margin-top: 200px;
+    margin-left: 150px;
+}
+
+.halaman-5::before {
+    background-color: black;
+}
+
+.halaman-5 {
+    background: url('top-score-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100%;
+}
+
+.top-score h1 {
+    margin-top: 400px;
+    margin-left: 15%;
+    font-size: 3.5rem;
+}
+
+.top-score p {
+    margin-left: 15%;
+}
+
+.button-seemore {
+    margin-top: 20px;
+    margin-left: 15%;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 10px 5px 0px 0px rgba(255, 196, 0, 0.76);
+  }
+
+  .col-avt-1 {
+    margin-left: 60%;
+    margin-top: -400px;
+    border-radius: 10px;
+  }
+
+  .avatar-1 {
+      margin-left: 20px;
+      margin-top: 20px
+  }
+  .col-avt-1 h2{
+    margin-top: -80px;
+    margin-left: 35%;
+  }
+  
+  .col-avt-1 h4{
+    margin-left: 35%;
+  }
+
+  .col-avt-1 p {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  
+
+.avatar-2 {
+    margin-left: 20px;
+    margin-top: 20px
+}
+
+.col-avt-2 {
+    margin-left: 50%;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+
+.col-avt-2 h2{
+  margin-top: -80px;
+  margin-left: 35%;
+}
+
+.col-avt-2 h4{
+  margin-left: 35%;
+}
+
+.col-avt-2 p {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.avatar-3 {
+    margin-left: 20px;
+    margin-top: 20px
+}
+
+.col-avt-3 {
+    margin-left: 60%;
+    margin-top: 100px;
+    border-radius: 10px;
+  }
+
+.col-avt-3 h2{
+  margin-top: -80px;
+  margin-left: 35%;
+}
+
+.col-avt-3 h4{
+  margin-left: 35%;
+}
+
+.col-avt-3 p {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+#box1{
+    width:450px;
+    height:200px;
+    background:rgb(68, 68, 68);
+}
+
+#box2{
+    width:450px;
+    height:200px;
+    background:rgb(68, 68, 68);
+}
+
+#box3{
+    width:450px;
+    height:200px;
+    background:rgb(68, 68, 68);
+}
+
+.halaman-6 {
+    background: url('newsletter.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100%;
+}
+
+.row-title {
+    margin-left: 40%;
+}
+
+.row-title h3{
+    margin-top: 150px
+}
+
+.row-title h1{
+    font-size: 4rem;
+}
+
+.form-email {
+    margin-top: 200px;
+}
+
+
+#emailvalue {
+    background-color: rgb(29, 29, 29);
+    color: goldenrod;
+    font-size: 1rem;
+    height: 40px;
+    margin-top: -150px;
+}
+
+.btn-setting {
+    margin-top: 50px;
+    font-size: 1rem;
+}
+
+.Footer-text-button {
+    margin-top: 150px;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 10%;
+    
+}
+
+.foot-about {
+    margin-left: 50px;
+}
+.foot-game {
+    margin-left: 50px;
+}
+.foot-system {
+    margin-left: 50px;
+}
+.foot-quotes {
+    margin-left: 50px;
+}

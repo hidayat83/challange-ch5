@@ -1,0 +1,120 @@
+.container {
+  background-color: #9c835f;
+  width: 1440px;
+  height: 800px;
+}
+
+.logo {
+  display: inline;
+  margin-left: 100px;
+  height: 72px;
+  width: 72px;
+}
+
+/* PLAYER SECTION */
+#player-1 ul {
+  padding-top: 80px;
+  padding-left: 40px;
+}
+
+#player li {
+  display: block;
+  margin: 0 18px;
+}
+
+#player img {
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin-left: 280px;
+  border-radius: 100%;
+  padding: 30px;
+}
+
+.choice {
+  transition: 0.3s;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  display: inline;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+.choice:hover,
+.active {
+  background-color: #c4c4c4;
+}
+
+.choice:active {
+  top: 2px;
+}
+
+/* COMPUTER SECTION */
+#computer ul {
+  margin-top: -420px;
+  margin-left: 850px;
+}
+
+#computer li {
+  display: block;
+  margin: 0 18px;
+}
+
+#computer img {
+  width: 130px;
+  height: 130px;
+  display: block;
+  padding: 30px;
+  border-radius: 100%;
+}
+
+.batu-comp:hover,
+.kertas-comp:hover,
+.gunting-comp:hover,
+.active {
+  background-color: #c4c4c4;
+}
+
+.batu-comp:active,
+.kertas-comp:active,
+.gunting-comp:active {
+  top: 2px;
+}
+
+/* judul player comp */
+h3 {
+  display: inline-block;
+  color: black;
+  margin-left: 400px;
+  margin-top: 50px;
+  letter-spacing: 3;
+  padding-right: 60px;
+  font-family: Open;
+}
+
+/* VS */
+#versus-h1 {
+  margin-top: -360px;
+  color: #bd0000;
+  font-size: 100px;
+  font-family: OPEN;
+  text-align: center;
+}
+
+#reset {
+  margin-top: -50px;
+  margin-left: 700px;
+  color: #bd0000;
+  font-size: 100px;
+  font-family: OPEN;
+  text-align: center;
+}
+
+/* judul */
+.rps-h1 {
+  color: #f9b23d;
+  font-family: Open;
+  margin-top: -50px;
+  margin-left: 200px;
+}
